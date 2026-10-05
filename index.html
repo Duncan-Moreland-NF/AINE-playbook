@@ -266,6 +266,11 @@
   @media (max-width:860px){ .intro3.two{grid-template-columns:1fr} }
   .play.bare > .callout.lead{margin:0}
   .play.bare > .callout.lead + .callout{margin-top:8px}
+  .sym.two td.q{width:62%}
+  .sym.two td.go{width:38%;white-space:normal}
+  .sym.two td.go .pill{display:inline-block;margin:0 6px 6px 0}
+  .lvl-intro{margin:16px 0 0;font-size:13.5px;font-weight:650;color:var(--ink2)}
+  .lvl-intro + .segwrap{margin-top:8px}
 </style>
 
 <div class="shell">
@@ -274,9 +279,9 @@
   <p class="tt">Contents</p>
   <ol>
     <li><a href="#start" class="top"><span class="n">1</span>What is this</a></li>
-    <li><a href="#glance" class="top"><span class="n">2</span>Six plays at a glance</a></li>
-    <li><a href="#flow" class="top"><span class="n">3</span>Where the plays sit</a></li>
-    <li><a href="#hurts" class="top"><span class="n">4</span>What hurts? Start here</a></li>
+    <li><a href="#glance" class="top"><span class="n">2</span>Six Plays at a glance</a></li>
+    <li><a href="#flow" class="top"><span class="n">3</span>Where the Plays sit</a></li>
+    <li><a href="#hurts" class="top"><span class="n">4</span>Frequent challenges</a></li>
     <li><a href="#plays" class="top"><span class="n">5</span>Plays in detail</a>
       <ol class="lv2">
         <li><a href="#play1">1 &middot; Define intent</a></li>
@@ -302,37 +307,37 @@
   <div class="play bare">
     <div class="intro3 two">
       <div class="it"><span class="ie">&#128214;</span><b>What it is</b>
-        <p>A set of lightweight, account-agnostic AI Native Engineering (AINE) practices, called plays, that
+        <p>A set of lightweight, account-agnostic AI Native Engineering (AINE) practices, called Plays, that
           individuals and teams can adopt to improve their AINE processes or overcome common problems. They were
           identified through interviews with 15 Nearform accounts in August and September 2026, all with AINE
           embedded in day-to-day delivery and varying in size, type of transformation and how long they had been
           running. It is not a complete list, and nothing here is prescriptive: use what fits your account, your
           role and your work.</p></div>
       <div class="it"><span class="ie">&#129517;</span><b>How to use it</b>
-        <p>Start at <a href="#hurts">What hurts?</a>, find the problem you actually have, and go to the play
-          beside it. Every play has the same shape: the problem, the play, what it buys, what it costs, and
-          points to consider.</p></div>
+        <p>Go straight to <a href="#plays">the Plays</a>, or use <a href="#hurts">Frequent challenges</a> to find
+          the Plays that match what you're experiencing. Each Play gives an overview and the challenge it
+          addresses, then its benefits, costs and points for consideration where relevant.</p></div>
     </div>
     <div class="consider">
       <div class="lbl">Considerations</div>
-      <div class="ci"><span class="ce">&#127959;&#65039;</span><div><b>Build on what you have.</b> The plays are
+      <div class="ci"><span class="ce">&#127959;&#65039;</span><div><b>Build on what you have.</b> The Plays are
         not meant to replace your team's practices or structure. They are easy additions that enhance your
-        existing processes. If a play would change how your team works, discuss it with the team before adopting
+        existing processes. If a Play would change how your team works, discuss it with the team before adopting
         it.</div></div>
-      <div class="ci"><span class="ce">&#128295;</span><div><b>Assumes Nearform engineering practices.</b> The plays
+      <div class="ci"><span class="ce">&#128295;</span><div><b>Assumes Nearform engineering practices.</b> The Plays
         build on the engineering practices Nearform teams already use, such as linting, code coverage, automated
-        tests, and CI that fails a build. The plays add to those practices, not replace them.</div></div>
+        tests, and CI that fails a build. The Plays add to those practices, not replace them.</div></div>
       <div class="ci"><span class="ce">&#128248;</span><div><b>A snapshot in time.</b> The AINE landscape is
         changing rapidly, so how long these practices stay relevant is unknown. They reflect the findings and
-        suggestions from interviews carried out in August 2026, so keep that in mind when reviewing them
+        suggestions from interviews carried out in August and September 2026, so keep that in mind when reviewing them
         later.</div></div>
     </div>
   </div>
 </div>
 
 <div class="slide" id="glance">
-  <div class="eyebrow">The plays</div>
-  <h2>Six plays at a glance</h2>
+  <div class="eyebrow">The Plays</div>
+  <h2>Six Plays at a glance</h2>
   <div class="rule"></div>
   <div class="glance">
       <a class="gcard" href="#play1">
@@ -340,51 +345,45 @@
         <span class="gnum">Play 1</span>
         <span class="gtitle">Define intent for its audience</span>
         <span class="gdo">Capture intent in a format each audience, people and AI, can read and use.</span>
-        <span class="gwhen"><b>For when</b> People can't follow what is being built, or the agent fills gaps with its own assumptions.</span>
       </a>
       <a class="gcard" href="#play2">
         <span class="gemo lot" data-icon="p2" aria-hidden="true">&#129521;</span>
         <span class="gnum">Play 2</span>
         <span class="gtitle">Size work with review in mind</span>
         <span class="gdo">Size work handed to AI by the effort to review it, not just the effort to build it.</span>
-        <span class="gwhen"><b>For when</b> Changes arrive too big to review, or nobody can explain them a week later.</span>
       </a>
       <a class="gcard" href="#play3">
         <span class="gemo lot" data-icon="p3" aria-hidden="true">&#128203;</span>
         <span class="gnum">Play 3</span>
         <span class="gtitle">Capture work as a spec</span>
-        <span class="gdo">Record what was agreed, and why, as a durable artefact the build and the checks are measured against.</span>
-        <span class="gwhen"><b>For when</b> There is nothing fixed to check against, or scope keeps shifting mid-build.</span>
+        <span class="gdo">At the end of planning, capture the agreed scope as a spec that build, test and review all work from.</span>
       </a>
       <a class="gcard" href="#play4">
         <span class="gemo lot" data-icon="p4" aria-hidden="true">&#128506;&#65039;</span>
         <span class="gnum">Play 4</span>
         <span class="gtitle">Establish the right context</span>
-        <span class="gdo">Give the agent a small, shared and current set of conventions and decisions before it acts.</span>
-        <span class="gwhen"><b>For when</b> You keep correcting the same assumptions, or output depends on who asked.</span>
+        <span class="gdo">Give AI a shared set of your conventions, rules, decisions and best practices before it starts.</span>
       </a>
       <a class="gcard" href="#play5">
         <span class="gemo lot" data-icon="p5" aria-hidden="true">&#128373;&#65039;</span>
         <span class="gnum">Play 5</span>
         <span class="gtitle">Establish adversarial responsibilities</span>
-        <span class="gdo">Check the work from a position that has not seen how it was built, at the tests and the review.</span>
-        <span class="gwhen"><b>For when</b> Review tells you the code is tidy, not whether it built the right thing.</span>
+        <span class="gdo">Limit what's shared between plan, build, test and review, and give each stage a clear role.</span>
       </a>
       <a class="gcard" href="#play6">
         <span class="gemo lot" data-icon="p6" aria-hidden="true">&#128294;</span>
         <span class="gnum">Play 6</span>
         <span class="gtitle">Surface what the team is using to build</span>
-        <span class="gdo">Make each person's skills, prompts and context visible to the team, in a ceremony you already run.</span>
-        <span class="gwhen"><b>For when</b> Good practice stays on one person's machine and gets rediscovered.</span>
+        <span class="gdo">Make what each person has built and uses visible, in an existing ceremony or a shared repo.</span>
       </a>
   </div>
 </div>
 
 <div class="slide" id="flow">
   <div class="eyebrow">Orientation</div>
-  <h2>Where the plays sit in the flow</h2>
+  <h2>Where the Plays sit in the flow</h2>
   <div class="rule"></div>
-  <p class="sub">From intent arriving to a change published for review. Four plays sit on the flow.
+  <p class="sub">From intent arriving to a change published for review. Four Plays sit on the flow.
     One governs the <em>size</em> of what moves through it, and is decided at planning, before the spec is written.
     One sits outside the flow entirely, feeding back into how the team runs the whole thing.</p>
 
@@ -430,72 +429,56 @@
 </div>
 
 <div class="slide" id="hurts">
-  <div class="eyebrow">Start here</div>
-  <h2>What hurts?</h2>
+  <div class="eyebrow">Find the right Play</div>
+  <h2>Frequent challenges</h2>
   <div class="rule"></div>
-  <p class="sub">Nobody adopts a playbook by reading it end to end. Find the problem you actually have,
-    and start with the play next to it. Everything else can wait until it hurts.</p>
-
-  <table class="sym">
-    <thead><tr><th>The symptom</th><th>Start with</th><th>Why that one</th></tr></thead>
+  <p class="sub">These are challenges frequently raised during the interviews and playback sessions. If any sound
+    familiar, the Plays beside them may help.</p>
+  <table class="sym two">
+    <thead><tr><th>Challenge</th><th>Plays</th></tr></thead>
     <tbody>
+      <tr id="h-follow">
+        <td class="q"><span class="ico">&#127787;&#65039;</span>It isn't clear what's in scope or the value the work is meant to deliver, and AI frequently makes its own assumptions about scope.</td>
+        <td class="go"><a class="pill" href="#play1">Define intent for its audience</a></td>
+      </tr>
       <tr id="h-review">
-        <td class="q"><span class="ico">&#129704;</span>Review is the bottleneck. Changes arrive too large to hold in your head.</td>
-        <td class="go"><a class="pill" href="#play2">Play 2</a></td>
-        <td>Sizing the unit is the fix. Review cannot absorb what was never made reviewable.</td>
+        <td class="q"><span class="ico">&#129704;</span>Changes arrive too large to review properly, and key information gets missed.</td>
+        <td class="go"><a class="pill" href="#play2">Size work with review in mind</a></td>
       </tr>
       <tr id="h-explain">
-        <td class="q"><span class="ico">&#129300;</span>Engineers can't explain what was built a week later.</td>
-        <td class="go"><a class="pill" href="#play2">Play 2</a></td>
-        <td>Understanding is lost at the point the change stopped being reviewable, not at the point it shipped.</td>
-      </tr>
-      <tr id="h-specs">
-        <td class="q"><span class="ico">&#129513;</span>Specs vary across the team and have stopped working as documentation.</td>
-        <td class="go"><a class="pill" href="#play3">Play 3</a><a class="pill" href="#play6">Play 6</a></td>
-        <td>Standardise how a spec is authored, not just that one exists, and surface who is doing what.</td>
-      </tr>
-      <tr id="h-assume">
-        <td class="q"><span class="ico">&#128302;</span>AI keeps making assumptions you have to correct.</td>
-        <td class="go"><a class="pill" href="#play4">Play 4</a><a class="pill" href="#play1">Play 1</a></td>
-        <td>Either it lacks shared context, or the intent it was given was incomplete. If it persists after Play 4, training on how to write context can help.</td>
-      </tr>
-      <tr id="h-intent">
-        <td class="q"><span class="ico">&#127919;</span>You can tell whether the code is tidy, not whether it built the right thing.</td>
-        <td class="go"><a class="pill" href="#play5">Play 5</a><a class="pill" href="#play3">Play 3</a></td>
-        <td>Checking intent needs something authoritative to check against, and a reviewer that can see it.</td>
-      </tr>
-      <tr id="h-follow">
-        <td class="q"><span class="ico">&#127787;&#65039;</span>The client doesn't understand what is in scope, and the engineer is unclear on the value they are delivering.</td>
-        <td class="go"><a class="pill" href="#play1">Play 1</a></td>
-        <td>Intent written for one audience fails the other. Each audience needs its own form of it.</td>
+        <td class="q"><span class="ico">&#129300;</span>Engineers can't explain what was built a few weeks later.</td>
+        <td class="go"><a class="pill" href="#play2">Size work with review in mind</a></td>
       </tr>
       <tr id="h-mismatch">
-        <td class="q"><span class="ico">&#128256;</span>What gets built doesn't match what was agreed in planning.</td>
-        <td class="go"><a class="pill" href="#play3">Play 3</a></td>
-        <td>Agreed scope needs to be written down and fixed before the build, not carried over in a long conversation.</td>
+        <td class="q"><span class="ico">&#128256;</span>What gets built doesn't match the scope agreed in planning.</td>
+        <td class="go"><a class="pill" href="#play3">Capture work as a spec</a></td>
       </tr>
       <tr id="h-shifting">
-        <td class="q"><span class="ico">&#9999;&#65039;</span>Agreed scope keeps shifting: stakeholders change or "clarify" it after the build has started.</td>
-        <td class="go"><a class="pill" href="#play3">Play 3</a></td>
-        <td>A spec is agreed up front and then fixed. That is what it is for, so decide who can write to it.</td>
+        <td class="q"><span class="ico">&#9999;&#65039;</span>Requirements change unexpectedly during build, test or review.</td>
+        <td class="go"><a class="pill" href="#play3">Capture work as a spec</a></td>
+      </tr>
+      <tr id="h-assume">
+        <td class="q"><span class="ico">&#128257;</span>You keep making the same corrections to AI output to match your team's standards.</td>
+        <td class="go"><a class="pill" href="#play4">Establish the right context</a></td>
+      </tr>
+      <tr id="h-intent">
+        <td class="q"><span class="ico">&#127919;</span>The code you review doesn't match expectations, and more time goes on rewriting than reviewing.</td>
+        <td class="go"><a class="pill" href="#play5">Establish adversarial responsibilities</a></td>
       </tr>
       <tr id="h-visibility">
-        <td class="q"><span class="ico">&#128584;</span>Nobody knows what anyone else on the team has built or is using.</td>
-        <td class="go"><a class="pill" href="#play6">Play 6</a></td>
-        <td>Capability stays individual until something makes it visible. Nothing else fixes this.</td>
+        <td class="q"><span class="ico">&#128584;</span>Good practice stays with one person, and others end up rediscovering it.</td>
+        <td class="go"><a class="pill" href="#play6">Surface what the team is using to build</a></td>
       </tr>
       <tr id="h-variance">
-        <td class="q"><span class="ico">&#127922;</span>Output quality varies noticeably depending on who did the work.</td>
-        <td class="go"><a class="pill" href="#play6">Play 6</a><a class="pill" href="#play4">Play 4</a></td>
-        <td>Variance usually traces to unshared practice and inconsistent shared context.</td>
+        <td class="q"><span class="ico">&#127922;</span>Output varies noticeably depending on who did the work.</td>
+        <td class="go"><a class="pill" href="#play4">Establish the right context</a><a class="pill" href="#team">Team operational considerations</a></td>
       </tr>
     </tbody>
   </table>
-
 </div>
 
 <div class="slide" id="plays">
-  <div class="eyebrow">The plays</div>
+  <div class="eyebrow">The Plays</div>
   <h2>Plays in detail</h2>
   <div class="rule"></div>
 
@@ -504,11 +487,11 @@
   <div class="play bare">
     <div class="callout play lead">
       <span class="cemo">&#128736;&#65039;</span>
-      <p><b>The play.</b> Capture intent in a format that is readable, consumable and appropriate for each audience. Where work has more than one audience, such as people and AI, tailor the intent to each one's needs.</p>
+      <p><b>The Play.</b> Capture intent in a format that is readable, consumable and appropriate for each audience. Where work has more than one audience, such as people and AI, tailor the intent to each one's needs.</p>
     </div>
     <div class="callout prob">
       <span class="cemo">&#128679;</span>
-      <p><b>The challenge.</b> Intent written for one audience fails the other. Written only for the AI, it becomes a wall of detail: the client can't tell what is in scope, and the engineer loses sight of the value they are delivering. Written only for people, it carries the value and the why but not the specifics, so the AI keeps making its own assumptions, and what comes back isn't what was expected.</p>
+      <p><b>The challenge.</b> It isn't clear what is in scope or the value the work is meant to deliver, and what AI produces isn't what was expected. Often the intent was written for only one audience. Written only for the AI, it becomes a wall of detail people can't follow. Written only for people, it carries the value and the why but not the specifics, so the AI fills the gaps with its own assumptions.</p>
     </div>
     <div class="bc" style="--n:3">
       <div class="bcol pos">
@@ -534,18 +517,18 @@
   <div class="play bare">
     <div class="callout play lead">
       <span class="cemo">&#128736;&#65039;</span>
-      <p><b>The play.</b> When sizing a piece of work to hand to AI, consider the effort to review it, not just the effort to build it. Keep each piece small enough for a person to review and understand, and if a piece can't be split, build and review it in parts. Sizing is the mechanism; understanding what you are shipping is the point.</p>
+      <p><b>The Play.</b> When sizing a piece of work to hand to AI, consider the effort to review it, not just the effort to build it. Keep each piece small enough for a person to review and understand, and if a piece can't be split, build and review it in parts. Sizing is the mechanism; understanding what you are shipping is the point.</p>
     </div>
     <div class="callout prob">
       <span class="cemo">&#128679;</span>
-      <p><b>The challenge.</b> AI has made building faster, but not reviewing. What would have taken days to build now takes hours, but it is still days of change to be reviewed. When a change is very large, it is hard to review all of it in the detail it needs. Key information can be missed, or the review gets left to AI instead. Over time, engineers become unfamiliar with their own work, and both knowledge and quality suffer.</p>
+      <p><b>The challenge.</b> Changes are arriving faster and larger than anyone can review properly. What would have taken days to build now takes hours, but it is still days of change to be reviewed. Key information gets missed, or the review gets left to AI instead. Over time, engineers become unfamiliar with their own work, and both knowledge and quality suffer.</p>
     </div>
     <div class="bc" style="--n:4">
       <div class="bcol pos">
         <div class="bh"><span class="e">&#9989;</span>Benefit</div>
         <div class="bt"><b>Knowledge stays with the team</b><span>Engineers stay familiar with their work and can explain it weeks later.</span></div>
         <div class="bt"><b>Review gets the attention it deserves</b><span>Each piece is small enough to review properly, so key information isn't missed.</span></div>
-        <div class="bt"><b>Quality holds at AI speed</b><span>Work moves fast without cutting the review that keeps quality up.</span></div>
+        <div class="bt"><b>Quality keeps pace</b><span>Work still moves faster than by hand, without cutting the review that keeps quality up.</span></div>
       </div>
       <div class="bcol neg">
         <div class="bh"><span class="e">&#9878;&#65039;</span>Cost</div>
@@ -558,7 +541,6 @@
     <div class="consider">
       <div class="lbl">Points for consideration</div>
       <div class="ci"><span class="ce idea">&#128161;</span><div><b>Expectations of understanding vary.</b> How closely people are expected to understand the code differs by team and by client, so it is worth discussing with your team to align these expectations.</div></div>
-      <div class="ci"><span class="ce idea">&#128161;</span><div><b>Not reading every line is fine.</b> An engineer who holds the system and does not need to read every line is not the problem. One who relays output they never understood is.</div></div>
     </div>
   </div>
 
@@ -566,7 +548,7 @@
   <div class="play bare">
     <div class="callout play lead">
       <span class="cemo">&#128736;&#65039;</span>
-      <p><b>The play.</b> At the end of planning, before moving to build, capture the agreed scope as a spec: a durable artefact written as AI intent. Hand it to the build phase so it builds what is expected, then pass it on to test and review so they can check the work against the intended scope.</p>
+      <p><b>The Play.</b> At the end of planning, before moving to build, capture the agreed scope as a spec: a durable artefact written as AI intent. Hand it to the build phase so it builds what is expected, then pass it on to test and review so they can check the work against the intended scope.</p>
     </div>
     <div class="callout prob">
       <span class="cemo">&#128679;</span>
@@ -589,10 +571,10 @@
     <div class="consider">
       <div class="lbl">Points for consideration</div>
       <div class="ci"><span class="ce skip">&#9197;&#65039;</span><div><b>Skip when</b> the change is small, easily undone and understood by whoever reviews it, or simple enough to describe in a single prompt.</div></div>
-      <div class="ci"><span class="ce idea">&#128161;</span><div><b>A spec reflects a point in time.</b> A spec captures what was agreed when it was written. If the information behind it changes later, the spec stays as it was. That's expected, but it can then look wrong against the new direction. Date each spec so anyone reading it, including the client, can see when it was agreed.</div></div>
+      <div class="ci"><span class="ce idea">&#128161;</span><div><b>A spec reflects a point in time.</b> A spec captures what was agreed when it was written. If the information behind it changes later, the spec can look wrong against the new direction unless it's updated. Date each spec so anyone reading it, including the client, can see when it was agreed.</div></div>
       <div class="ci"><span class="ce idea">&#128161;</span><div><b>Agree how changes are handled.</b> The build may change how something is delivered while still delivering what was asked for. Changes found after the spec is written should be reflected in a spec update, clearly marked, so test and review check against what is now agreed. Very small changes may not need this. How changes are handled should be agreed by the team.</div></div>
       <div class="ci"><span class="ce idea">&#128161;</span><div><b>Agree what a ready spec looks like.</b> Like a definition of ready, the team agrees the format and content a spec needs before it goes to build, so specs stay consistent.</div></div>
-      <div class="ci"><span class="ce idea">&#128161;</span><div><b>Who writes it is an account decision.</b> On some accounts the developer doing the work writes the spec; on others the tech lead writes them for the team, or requirements arrive from a product owner.</div></div>
+      <div class="ci"><span class="ce idea">&#128161;</span><div><b>Who writes it is an account decision.</b> On some accounts the developer doing the work writes the spec; on others the Tech Lead writes them for the team, or requirements arrive from a product owner.</div></div>
     </div>
   </div>
 
@@ -600,11 +582,11 @@
   <div class="play bare">
     <div class="callout play lead">
       <span class="cemo">&#128736;&#65039;</span>
-      <p><b>The play.</b> Before AI starts work, give it a shared set of your conventions, rules, decisions and best practices. Keep it short and focused on what matters most, share it across the team so everyone works from the same base, and review it as AI models improve, since guidance written for an older model can hold a newer one back.</p>
+      <p><b>The Play.</b> Before AI starts work, give it a shared set of your conventions, rules, decisions and best practices. Keep it short and focused on what matters most, share it across the team so everyone works from the same base, and review it as AI models improve, since guidance written for an older model can hold a newer one back.</p>
     </div>
     <div class="callout prob">
       <span class="cemo">&#128679;</span>
-      <p><b>The challenge.</b> Without your conventions, rules, decisions and best practices, AI produces output that varies considerably depending on the prompt and details it was given, and the same corrections get made again and again to match your team's standards. Across a team, the effect multiplies: each person gets noticeably different results, and more and more time is spent fixing the output.</p>
+      <p><b>The challenge.</b> You find yourself making the same corrections to AI output again and again to match your team's standards, and the output varies depending on the prompt and details it was given. Across a team, the effect multiplies: each person gets noticeably different results, and more and more time is spent fixing the output. Usually it's because AI doesn't have your conventions, rules, decisions and best practices.</p>
     </div>
     <div class="bc" style="--n:3">
       <div class="bcol pos">
@@ -623,104 +605,93 @@
     <div class="consider">
       <div class="lbl">Points for consideration</div>
       <div class="ci"><span class="ce skip">&#9197;&#65039;</span><div><b>Skip when</b> the work is a short, one-off task with no team standards to follow, and everything the AI needs fits in the prompt.</div></div>
-      <div class="ci"><span class="ce idea">&#128161;</span><div><b>Doing it well takes skill.</b> This play explains why shared context is worth having, not how to build it. If the AI keeps making the same assumptions after this play, the gap may be in how the context is written, and training, such as Claude Foundations, can help.</div></div>
+      <div class="ci"><span class="ce idea">&#128161;</span><div><b>Doing it well takes skill.</b> This Play explains why shared context is worth having, not how to build it. If the AI keeps making the same assumptions after this Play, the gap may be in how the context is written, and training, such as Claude Foundations, can help.</div></div>
     </div>
   </div>
 
 
   <div class="ptop out" id="play5"><span class="pnum">PLAY 5</span><h4><span class="pemo lot" data-icon="p5" aria-hidden="true">&#128373;&#65039;</span>Establish adversarial responsibilities</h4></div>
   <div class="play bare">
+    <div class="callout play lead">
+      <span class="cemo">&#128736;&#65039;</span>
+      <p><b>The Play.</b> Limit the information shared between each stage: plan, build, test and review. Give each stage clear responsibilities, so it focuses on what it needs to do and isn't influenced by the stages around it. This can be done by hand, at individual scale or at team scale, as the Levels below describe.</p>
+    </div>
     <div class="callout prob">
       <span class="cemo">&#128679;</span>
-      <p><b>The challenge.</b> The session that built the code is the worst placed to check it: it holds the
-        same assumptions that produced the code, so it marks its own homework. Tests the builder writes
-        confirm the code does what the code does. Review ends up judging whether the code is tidy, not
-        whether it built what was asked.</p>
+      <p><b>The challenge.</b> The code you're reviewing doesn't match your expectations, and more time goes on rewriting than reviewing. Assumptions made at each stage of plan, build, test and review have compounded, often because information, or misinformation, was carried from one stage to the next in the same AI conversation. The conversation that planned the work is the worst place to build it, and the conversation that built the work is the worst place to test it.</p>
     </div>
+    <p class="lvl-intro">Three levels of implementation:</p>
     <div class="segwrap">
       <input class="segr" type="radio" name="p5step" id="p5s1" checked>
       <input class="segr" type="radio" name="p5step" id="p5s2">
       <input class="segr" type="radio" name="p5step" id="p5s3">
-      <div class="seg" role="radiogroup" aria-label="Choose an approach"><label for="p5s1" class="l1">1 &middot; Fresh context by hand</label><label for="p5s2" class="l2">2 &middot; Your own agentic flow</label><label for="p5s3" class="l3">3 &middot; Team orchestration</label></div>
-      <div class="segnote n1">The practice. No setup, and all of the quality benefit. Most teams should stop here.</div>
-      <div class="segnote n2">Optional. Automates step 1 for your own work. Your call; it needs nobody's permission.</div>
-      <div class="segnote n3">Optional, and a team decision. Justified by delivery risk, never by output quality.</div>
+      <div class="seg" role="radiogroup" aria-label="Choose a level"><label for="p5s1" class="l1">1 &middot; Fresh context per stage</label><label for="p5s2" class="l2">2 &middot; Your own agentic flow</label><label for="p5s3" class="l3">3 &middot; Team orchestration</label></div>
+      <div class="segnote n1">A fresh conversation for each stage. Minimal setup with considerable benefit.</div>
+      <div class="segnote n2">Automates Level 1 through an agentic flow at individual scale.</div>
+      <div class="segnote n3">A team decision. Automates Level 1 and Level 2 through an agentic flow at team scale.</div>
       <div class="segpane p1">
       <div class="callout play">
-        <span class="cemo">&#128736;&#65039;</span>
-        <p><b>The play.</b> Check the work from a position that has not seen how it was built, at both the tests and the review. When the build is done, open a fresh session, give it the spec and the diff, and nothing from the build conversation. It reports; it does not fix.</p>
+        <span class="cemo">&#9881;&#65039;</span>
+        <p><b>How it works.</b> Start a new AI conversation for each stage, passing on only the key information. Take the agreed scope and criteria from planning (ideally a spec) into a new conversation focused on building it. Then take the build output into a new conversation focused on testing, and so on. Give each conversation a clear responsibility so it stays focused on its own role: the build conversation builds to the agreed requirements, and the test conversation makes sure every criterion is fully met.</p>
       </div>
-      <div class="bc" style="--n:3">
+    <div class="bc" style="--n:3">
       <div class="bcol pos">
         <div class="bh"><span class="e">&#9989;</span>Benefit</div>
-        <div class="bt"><b>Sees what the builder cannot</b><span>A clean context is not holding the reasoning that produced the code.</span></div>
-        <div class="bt"><b>Tests that test the spec</b><span>Written from the spec, not by the builder, so its blind spots do not become the tests' blind spots.</span></div>
-        <div class="bt"><b>Disagreements surface</b><span>Where builder and checker read a requirement differently, you find out before a person does.</span></div>
+        <div class="bt"><b>Assumptions don't carry over</b><span>Each stage starts clean, so mistakes from one stage aren't built on in the next.</span></div>
+        <div class="bt"><b>Tests check what was agreed</b><span>Tests are written from the agreed criteria, not by the conversation that built the work, so its blind spots don't become the tests' blind spots.</span></div>
+        <div class="bt"><b>Gaps show up early</b><span>Where two stages read a requirement differently, you find out before it reaches human review.</span></div>
       </div>
       <div class="bcol neg">
         <div class="bh"><span class="e">&#9878;&#65039;</span>Cost</div>
-        <div class="bt"><b>Another pass</b><span>The handoff has to be written down, not assumed.</span></div>
-        <div class="bt"><b>Needs something to check against</b><span>With no spec, it degrades into a second opinion on style.</span></div>
-        <div class="bt"><b>Easy to skip</b><span>It depends on someone remembering to open the fresh session every time.</span></div>
+        <div class="bt"><b>More handoffs</b><span>The key information for each stage has to be written down and passed on, not assumed.</span></div>
+        <div class="bt"><b>Needs agreed criteria</b><span>Without clear scope from planning, each new conversation has little to work from.</span></div>
+        <div class="bt"><b>Easy to skip</b><span>It relies on someone remembering to start a fresh conversation at each stage.</span></div>
       </div>
-      </div>
+    </div>
       </div>
       <div class="segpane p2">
       <div class="callout play">
-        <span class="cemo">&#128736;&#65039;</span>
-        <p><b>The play.</b> Automate that handoff for your own work, so the check runs without you remembering. Define a reviewer agent or a scripted chain that starts clean with the spec, the diff and read-only access, then reports and stops. It checks no better than a fresh session; it just never gets skipped.</p>
+        <span class="cemo">&#9881;&#65039;</span>
+        <p><b>How it works.</b> Build on Level 1 by automating it. Instead of starting each fresh conversation by hand, set up an agentic workflow where a separate sub-agent handles each stage. Each starts with fresh context and has its own defined responsibility, and the key information is passed between them automatically, so nothing relies on someone remembering to hand it over.</p>
       </div>
-      <div class="bc" style="--n:3">
+    <div class="bc" style="--n:3">
       <div class="bcol pos">
         <div class="bh"><span class="e">&#9989;</span>Benefit</div>
-        <div class="bt"><b>Never forgotten</b><span>The check runs every time without you having to remember it.</span></div>
-        <div class="bt"><b>Consistent for you</b><span>The same brief, applied the same way, to every change you make.</span></div>
-        <div class="bt"><b>Improves over time</b><span>The brief is version-controlled: when it misses something, you fix the brief.</span></div>
+        <div class="bt"><b>Never forgotten</b><span>Each stage runs every time without you having to remember it.</span></div>
+        <div class="bt"><b>Consistency</b><span>Work is carried out the same way every time.</span></div>
       </div>
       <div class="bcol neg">
         <div class="bh"><span class="e">&#9878;&#65039;</span>Cost</div>
-        <div class="bt"><b>Setup and upkeep</b><span>Someone has to build it and keep the brief current.</span></div>
-        <div class="bt"><b>A little more per run</b><span>Automation adds retries and extra context that a person would skip.</span></div>
-        <div class="bt"><b>No better output</b><span>You are paying for convenience, not for a better check.</span></div>
+        <div class="bt"><b>Setup and upkeep</b><span>The agentic flow has to be built and kept up to date.</span></div>
+        <div class="bt"><b>Context might slip</b><span>Relying on sub-agents to pass key information to each other means they may also pass on extra information or assumptions, which can lead to scope creep.</span></div>
+        <div class="bt"><b>Higher running cost</b><span>Agentic flows use more tokens. This may be negligible at small scale, but becomes a consideration when applied at scale.</span></div>
       </div>
-      </div>
+    </div>
       </div>
       <div class="segpane p3">
       <div class="callout play">
-        <span class="cemo">&#128736;&#65039;</span>
-        <p><b>The play.</b> Define one flow for the whole team, run the same way by everyone and typically triggered on every pull request, with state, handoff contracts and observability. It buys the same process whoever is working, plus an audit trail. That is a delivery risk argument, not an output quality one.</p>
+        <span class="cemo">&#9881;&#65039;</span>
+        <p><b>How it works.</b> Scale Level 2 to the whole team. Define one shared agentic flow, with a sub-agent for each stage, that everyone runs the same way, typically triggered automatically. It gives the team the same process whoever is working.</p>
       </div>
-      <div class="bc" style="--n:3">
+    <div class="bc" style="--n:3">
       <div class="bcol pos">
         <div class="bh"><span class="e">&#9989;</span>Benefit</div>
-        <div class="bt"><b>Same process for everyone</b><span>The check no longer depends on who did the work.</span></div>
-        <div class="bt"><b>An audit trail</b><span>A reproducible record of how each change was checked.</span></div>
-        <div class="bt"><b>Consistent from day one</b><span>New joiners get the same checking as everyone else from their first change.</span></div>
+        <div class="bt"><b>Same process for everyone</b><span>Every stage runs the same way, whoever did the work.</span></div>
+        <div class="bt"><b>Consistent from day one</b><span>New joiners work the same way as everyone else from their first change.</span></div>
       </div>
       <div class="bcol neg">
         <div class="bh"><span class="e">&#9878;&#65039;</span>Cost</div>
-        <div class="bt"><b>Substantial effort</b><span>State, handoff contracts and observability make it a software project.</span></div>
-        <div class="bt"><b>Needs an owner</b><span>A budget, and someone to debug it when it fails.</span></div>
-        <div class="bt"><b>Noise if unscoped</b><span>A reviewer that comments on everything trains the team to ignore it.</span></div>
+        <div class="bt"><b>Substantial effort</b><span>State, handoff contracts and observability create significant overhead.</span></div>
+        <div class="bt"><b>Needs dedicated capacity</b><span>An out of date, buggy or unoptimised agentic flow at team level can be more of a hindrance than a benefit.</span></div>
+        <div class="bt"><b>Commercial buy-in</b><span>Agentic flows at team level dramatically increase token usage. This would need to be considered and assessed.</span></div>
       </div>
-      </div>
+    </div>
       </div>
     </div>
     <div class="consider">
       <div class="lbl">Points for consideration</div>
-      <div class="ci"><span class="ce">&#9197;&#65039;</span><div><b>Skip when</b> the change is trivial and
-        fully covered by objective checks, tests, types and lint, so there is no intent left to misread.</div></div>
-      <div class="ci"><span class="ce">&#9888;&#65039;</span><div><b>Automation makes the isolation easy to
-        lose.</b> If the agents share a context, or the orchestrator passes the build
-        reasoning to the checker, you keep the machinery and lose the benefit. A person opening a new window
-        cannot make that mistake by accident; a chain can.</div></div>
-      <div class="ci"><span class="ce">&#128161;</span><div><b>What the checker gets.</b> The
-        test stage gets the spec and the public interface, not the implementation. The review stage gets the
-        spec and the diff. Neither gets the build conversation, and neither fixes anything.</div></div>
-      <div class="ci"><span class="ce">&#128161;</span><div><b>When to move to step 2 or 3.</b>
-        Only with a reason: evidence of drift between people, or a client or regulator that needs a
-        reproducible record. Pull back if you cannot tell why a run failed, or people start ignoring the
-        flags.</div></div>
+      <div class="ci"><span class="ce skip">&#9197;&#65039;</span><div><b>Skip when</b> the change is small and fully covered by automated checks, so there is nothing for assumptions to build on.</div></div>
+      <div class="ci"><span class="ce idea">&#128161;</span><div><b>When to move to Level 2 or 3.</b> It depends on the team's AI maturity, the rate of change, whether output variance is increasing between individuals or across the team, and the token usage constraints.</div></div>
     </div>
   </div>
 
@@ -730,11 +701,11 @@
   <div class="play bare">
     <div class="callout play lead">
       <span class="cemo">&#128736;&#65039;</span>
-      <p><b>The play.</b> Give the team a way to see what its members have made and are using, fitted into a ceremony that already exists, such as a retro or a show-and-tell, and/or a shared repo where people store what they've built so others can easily find and adapt it. The aim is visibility, not forcing everyone to work the same way.</p>
+      <p><b>The Play.</b> Give the team a way to see what its members have made and are using, fitted into a ceremony that already exists, such as a retro or a show-and-tell, and/or a shared repo where people store what they've built so others can easily find and adapt it. The aim is visibility, not forcing everyone to work the same way.</p>
     </div>
     <div class="callout prob">
       <span class="cemo">&#128679;</span>
-      <p><b>The challenge.</b> Much of what makes someone effective with AI can live on their own machine: the prompts, reusable instructions, context and harness optimisations. Nobody else on the team can see them, so good practice gets rediscovered rather than shared, and the team misses out on what is already working.</p>
+      <p><b>The challenge.</b> Someone on the team has worked out a better way of using AI, but nobody else knows about it. Their prompts, reusable instructions, context and harness optimisations live on their own machine, so good practice gets rediscovered rather than shared, and the team misses out on what is already working.</p>
     </div>
     <div class="bc" style="--n:3">
       <div class="bcol pos">
@@ -755,20 +726,20 @@
 </div>
 
 <div class="slide" id="team">
-  <div class="eyebrow">For tech leads</div>
+  <div class="eyebrow">For Tech Leads</div>
   <h2>Team operational considerations</h2>
   <div class="rule"></div>
   <div class="play bare">
     <div class="callout emerging">
       <span class="cemo">&#127793;</span>
       <p><b>An emerging insight, with limited data behind it.</b> This came out of the playback sessions
-        rather than being tested across the interviews, so the evidence is thin. It is aimed at tech leads
-        setting up an account, not at everyone. Treat it as a direction worth trying, not a settled
+        rather than being tested across the interviews, so the evidence is thin. It is aimed at Tech Leads, not at
+        everyone. Treat it as a direction worth trying, not a settled
         practice.</p>
     </div>
     <div class="callout prob">
       <span class="cemo">&#128679;</span>
-      <p><b>The challenge.</b> AI can be tailored in many ways: the choice of model or model family, skills, prompts, context and harness optimisations. For individuals this brings real benefits, but across a team, a difference in any one of these can cause large differences in output. For example, a small number of findings from the playback sessions showed team members using different model families, such as Anthropic and OpenAI, producing specs structured differently and code in different styles. Individual optimisations like these can produce output that affects the rest of the team.</p>
+      <p>AI can be tailored in many ways: the choice of model or model family, skills, prompts, context and harness optimisations. For individuals this brings real benefits, but across a team, a difference in any one of these can cause large differences in output. For example, a small number of findings from the playback sessions showed team members using different model families, such as Anthropic and OpenAI, producing specs structured differently and code in different styles. Individual optimisations like these can produce output that affects the rest of the team.</p>
     </div>
     <div class="callout play">
       <span class="cemo">&#128736;&#65039;</span>
@@ -786,7 +757,7 @@
       <div class="ci"><span class="ce skip">&#9197;&#65039;</span><div><b>Skip when</b> the team is small enough to coordinate by conversation, or the client dictates the tooling anyway.</div></div>
       <div class="ci"><span class="ce idea">&#128161;</span><div><b>Flexibility versus standardisation.</b> Both have benefits. Flexibility lets people discover new optimisations but can create variance; standardisation keeps team output aligned but can hold back improvements. The size of the team, the duration it will run, what it is building, and other delivery and technical factors all shape which works best.</div></div>
       <div class="ci"><span class="ce idea">&#128161;</span><div><b>Agreed processes need regular review.</b> New models and capabilities arrive quickly, so team-agreed processes should be reviewed regularly to make sure they don't become a constraint.</div></div>
-      <div class="ci"><span class="ce idea">&#128161;</span><div><b>Cheaper at the start than retrofitted.</b> Team standards are harder to put in once people have settled into their own ways of working, so this is a kickoff decision rather than a mid-engagement fix.</div></div>
+      <div class="ci"><span class="ce idea">&#128161;</span><div><b>Easier to agree early.</b> If the team does agree shared standards, it's easier at the start than once people have settled into their own ways of working.</div></div>
     </div>
   </div>
 </div>
