@@ -319,6 +319,15 @@
   .stat b{font-size:30px;line-height:1.05;font-weight:650;letter-spacing:-.02em;color:var(--ink)}
   .stat span:last-child{font-size:13px;color:var(--ink3);line-height:1.4}
   @media (max-width:860px){ .stats{grid-template-columns:repeat(2,minmax(0,1fr))} }
+  /* feedback */
+  .fbbox{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    background:var(--soft);border:1px solid var(--rule);border-radius:10px;padding:18px 20px}
+  .fbbox p{margin:0;font-size:14.5px;line-height:1.55;color:var(--ink2);flex:1 1 420px}
+  .fbbtn,.fbside{background:#00E5A4;color:#000E38;font-weight:650;text-decoration:none;border-radius:8px;transition:background .15s}
+  .fbbtn{display:inline-block;padding:10px 20px;font-size:14px;white-space:nowrap}
+  .fbbtn:hover,.fbside:hover{background:#33EAAE}
+  .fbside{display:block;margin-top:14px;padding:8px 10px;text-align:center;font-size:13px}
+  @media (max-width:1040px){ .fbside{margin-top:0;white-space:nowrap;padding:5px 12px;flex:none} }
 </style>
 
 <header class="topbar"><span class="tb-title">AINE Playbook<span class="u">_</span></span><span class="tb-sub">September 2026</span></header>
@@ -343,6 +352,7 @@
     </li>
     <li><a href="#team" class="top"><span class="n">6</span>Team operational considerations</a></li>
   </ol>
+  <a class="fbside" href="https://forms.gle/DpBMFhXbB2EHYibB7" target="_blank" rel="noopener">Give feedback &#8599;</a>
 </nav>
 
 <div class="main">
@@ -803,6 +813,19 @@
       <div class="ci"><span class="ce idea">&#128161;</span><div><b>Agreed processes need regular review.</b> New models and capabilities arrive quickly, so team-agreed processes should be reviewed regularly to make sure they don't become a constraint.</div></div>
       <div class="ci"><span class="ce idea">&#128161;</span><div><b>Easier to agree early.</b> If the team does agree shared standards, it's easier at the start than once people have settled into their own ways of working.</div></div>
     </div>
+  </div>
+</div>
+
+
+<div class="slide" id="feedback">
+  <div class="eyebrow">Feedback</div>
+  <h2>Was this useful?</h2>
+  <div class="rule"></div>
+  <div class="fbbox">
+    <p>If you can spare two or three minutes, feedback on whether this Playbook has been informative, and whether the
+      Plays are practical for your work, would be really helpful in shaping the next steps. Responses are
+      anonymous, but you'll need to be signed in with your Nearform account to open the form.</p>
+    <a class="fbbtn" href="https://forms.gle/DpBMFhXbB2EHYibB7" target="_blank" rel="noopener">Give feedback &#8599;</a>
   </div>
 </div>
 

@@ -274,6 +274,20 @@
   .callout.emerging .cbody p + p{margin-top:10px}
   /* callout text runs the full width of its box */
   .callout p,.callout .cbody{max-width:none;flex:1 1 auto;min-width:0}
+  .intro3.one{grid-template-columns:1fr}
+  .intro3 .it.row{display:flex;gap:12px;align-items:flex-start}
+  .intro3 .it.row .ie{flex:none;width:24px;margin:0;font-size:18px;line-height:1.4;text-align:center}
+  .intro3 .it.row b{display:inline;font-size:inherit;margin:0;color:var(--ink);font-weight:650}
+  .intro3 .it.row p{font-size:14px;line-height:1.55}
+  /* feedback */
+  .fbbox{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    background:var(--soft);border:1px solid var(--rule);border-radius:10px;padding:18px 20px}
+  .fbbox p{margin:0;font-size:14.5px;line-height:1.55;color:var(--ink2);flex:1 1 420px}
+  .fbbtn,.fbside{background:var(--accent);color:#fff;font-weight:650;text-decoration:none;border-radius:8px;transition:background .15s}
+  .fbbtn{display:inline-block;padding:10px 20px;font-size:14px;white-space:nowrap}
+  .fbbtn:hover,.fbside:hover{background:#1a43b8}
+  .fbside{display:block;margin-top:14px;padding:8px 10px;text-align:center;font-size:13px}
+  @media (max-width:1040px){ .fbside{margin-top:0;white-space:nowrap;padding:5px 12px;flex:none} }
 </style>
 
 <div class="shell">
@@ -281,7 +295,7 @@
 <nav class="toc" aria-label="Contents">
   <p class="tt">Contents</p>
   <ol>
-    <li><a href="#start" class="top"><span class="n">1</span>What is this</a></li>
+    <li><a href="#start" class="top"><span class="n">1</span>Playbook overview</a></li>
     <li><a href="#glance" class="top"><span class="n">2</span>Six Plays at a glance</a></li>
     <li><a href="#flow" class="top"><span class="n">3</span>Where the Plays sit</a></li>
     <li><a href="#hurts" class="top"><span class="n">4</span>Frequent challenges</a></li>
@@ -297,6 +311,7 @@
     </li>
     <li><a href="#team" class="top"><span class="n">6</span>Team operational considerations</a></li>
   </ol>
+  <a class="fbside" href="https://forms.gle/DpBMFhXbB2EHYibB7" target="_blank" rel="noopener">Give feedback &#8599;</a>
 </nav>
 
 <div class="main">
@@ -305,24 +320,23 @@
 
 <div class="slide" id="start">
   <div class="eyebrow">AINE Playbook - September 2026</div>
-  <h2>What is this</h2>
+  <h2>Playbook overview</h2>
   <div class="rule"></div>
   <div class="play bare">
-    <div class="intro3 two">
-      <div class="it"><span class="ie">&#128214;</span><b>What it is</b>
+    <div class="intro3 one">
+      <div class="it">
         <p>A set of lightweight, account-agnostic AI Native Engineering (AINE) practices, called Plays, that
           individuals and teams can adopt to improve their AINE processes or overcome common problems. They were
           identified through interviews with 15 Nearform accounts in August and September 2026, all with AINE
           embedded in day-to-day delivery and varying in size, type of transformation and how long they had been
           running. It is not a complete list, and nothing here is prescriptive: use what fits your account, your
           role and your work.</p></div>
-      <div class="it"><span class="ie">&#129517;</span><b>How to use it</b>
-        <p>Go straight to <a href="#plays">the Plays</a>, or use <a href="#hurts">Frequent challenges</a> to find
+      <div class="it row"><span class="ie">&#129517;</span><p><b>How to use it.</b> Go straight to <a href="#plays">the Plays</a>, or use <a href="#hurts">Frequent challenges</a> to find
           the Plays that match what you're experiencing. Each Play gives an overview and the challenge it
           addresses, then its benefits, costs and points for consideration where relevant.</p></div>
     </div>
     <div class="consider">
-      <div class="lbl">Considerations</div>
+      <div class="lbl">Points for consideration</div>
       <div class="ci"><span class="ce">&#127959;&#65039;</span><div><b>Build on what you have.</b> The Plays are
         not meant to replace your team's practices or structure. They are easy additions that enhance your
         existing processes. If a Play would change how your team works, discuss it with the team before adopting
@@ -758,6 +772,19 @@
       <div class="ci"><span class="ce idea">&#128161;</span><div><b>Agreed processes need regular review.</b> New models and capabilities arrive quickly, so team-agreed processes should be reviewed regularly to make sure they don't become a constraint.</div></div>
       <div class="ci"><span class="ce idea">&#128161;</span><div><b>Easier to agree early.</b> If the team does agree shared standards, it's easier at the start than once people have settled into their own ways of working.</div></div>
     </div>
+  </div>
+</div>
+
+
+<div class="slide" id="feedback">
+  <div class="eyebrow">Feedback</div>
+  <h2>Was this useful?</h2>
+  <div class="rule"></div>
+  <div class="fbbox">
+    <p>If you can spare two or three minutes, feedback on whether this Playbook has been informative, and whether the
+      Plays are practical for your work, would be really helpful in shaping the next steps. Responses are
+      anonymous, but you'll need to be signed in with your Nearform account to open the form.</p>
+    <a class="fbbtn" href="https://forms.gle/DpBMFhXbB2EHYibB7" target="_blank" rel="noopener">Give feedback &#8599;</a>
   </div>
 </div>
 
