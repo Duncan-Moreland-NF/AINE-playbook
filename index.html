@@ -1,4 +1,5 @@
 <title>AINE Playbook - September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#10151d; --ink2:#3c4655; --ink3:#6c7787; --ink4:#8b95a4;
@@ -274,22 +275,62 @@
   .callout.emerging .cbody p + p{margin-top:10px}
   /* callout text runs the full width of its box */
   .callout p,.callout .cbody{max-width:none;flex:1 1 auto;min-width:0}
+
+  /* ===== design variant: Nearform palette, Inter, sticky title bar ===== */
+  :root{--ink:#000E38;--ink2:#2A3657;--ink3:#526288;--ink4:#97A1B8;--rule:#DDE3EC;--soft:#F4F8FA;--bg:#F4F8FA;
+    --accent:#166BFF;--accent-bg:#E8F0FF;--accent-line:#B9D3FF;--pos:#2B7D63;--pos-bg:#E5FCF5;--neg:#D92D20;--neg-bg:#FEF1F0}
+  :root, :root *{font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  :root h2{font-weight:600;letter-spacing:-.02em}
+  :root .ptop.out h4,:root .gtitle,:root .intro3 .it b{font-weight:600}
+  :root .callout.play{background:#E8F0FF;border-color:#B9D3FF}
+  :root .callout.prob{background:#FDF6EC;border-color:#F3DFBF}
+  :root .callout.emerging{background:#F3EDFF;border-color:#DCCAFF}
+  :root .bcol.pos .bt{border-color:#B2F7E1}
+  :root .bcol.neg .bt{border-color:#F7D3CF}
+  :root .gcard,:root .intro3 .it{background:#F4F8FA;border-color:#E1E7EF}
+  :root .gcard:hover,:root .gcard:focus-visible{background:#E8F0FF;border-color:#B9D3FF}
+  :root .fg-col{background:#F4F8FA}
+  :root .fbar{background:#E8F0FF;border-color:#B9D3FF}
+  :root .fbar:hover{background:#D6E5FF}
+  :root .hitl{border-color:#B9D3FF}
+  :root .seg{background:#F4F8FA}
+  :root .toc a.on{background:#E8F0FF;box-shadow:inset 3px 0 0 #00E5A4}
+  :root .sym th{color:var(--ink3)}
+  .topbar{position:sticky;top:0;z-index:40;display:flex;align-items:baseline;gap:12px;padding:13px 26px;
+    background:#000E38;color:#fff}
+  .topbar .tb-title{font-size:18px;font-weight:650;letter-spacing:-.01em;color:#fff}
+  .topbar .u{color:#00E5A4}
+  .topbar .tb-sub{font-size:13px;color:#97A1B8;margin-left:auto}
+  body{padding-top:0}
+  .topbar{margin:0 -18px 26px}
+  .toc{top:76px;max-height:calc(100vh - 100px)}
+  [id]{scroll-margin-top:84px}
+  @media (max-width:1040px){ .toc{top:50px} }
   .intro3.one{grid-template-columns:1fr}
   .intro3 .it.row{display:flex;gap:12px;align-items:flex-start}
   .intro3 .it.row .ie{flex:none;width:24px;margin:0;font-size:18px;line-height:1.4;text-align:center}
   .intro3 .it.row b{display:inline;font-size:inherit;margin:0;color:var(--ink);font-weight:650}
   .intro3 .it.row p{font-size:14px;line-height:1.55}
+  /* overview: lede and stat tiles */
+  .lede{font-size:18.5px;line-height:1.6;color:var(--ink);margin:6px 2px 18px}
+  .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 16px}
+  .stat{background:#F4F8FA;border:1px solid #E1E7EF;border-radius:10px;padding:14px 16px 15px;display:flex;flex-direction:column;gap:4px}
+  .stat .bar{display:block;width:26px;height:4px;border-radius:2px;background:#00E5A4;margin-bottom:6px}
+  .stat b{font-size:30px;line-height:1.05;font-weight:650;letter-spacing:-.02em;color:var(--ink)}
+  .stat span:last-child{font-size:13px;color:var(--ink3);line-height:1.4}
+  @media (max-width:860px){ .stats{grid-template-columns:repeat(2,minmax(0,1fr))} }
   /* feedback */
   .fbbox{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
     background:var(--soft);border:1px solid var(--rule);border-radius:10px;padding:18px 20px}
   .fbbox p{margin:0;font-size:14.5px;line-height:1.55;color:var(--ink2);flex:1 1 420px}
-  .fbbtn,.fbside{background:var(--accent);color:#fff;font-weight:650;text-decoration:none;border-radius:8px;transition:background .15s}
+  .fbbtn,.fbside{background:#00E5A4;color:#000E38;font-weight:650;text-decoration:none;border-radius:8px;transition:background .15s}
   .fbbtn{display:inline-block;padding:10px 20px;font-size:14px;white-space:nowrap}
-  .fbbtn:hover,.fbside:hover{background:#1a43b8}
+  .fbbtn:hover,.fbside:hover{background:#33EAAE}
   .fbside{display:block;margin-top:14px;padding:8px 10px;text-align:center;font-size:13px}
   @media (max-width:1040px){ .fbside{margin-top:0;white-space:nowrap;padding:5px 12px;flex:none} }
 </style>
 
+<header class="topbar"><span class="tb-title">AINE Playbook<span class="u">_</span></span><span class="tb-sub">September 2026</span></header>
 <div class="shell">
 
 <nav class="toc" aria-label="Contents">
@@ -319,18 +360,18 @@
 <div class="wrap">
 
 <div class="slide" id="start">
-  <div class="eyebrow">AINE Playbook - September 2026</div>
   <h2>Playbook overview</h2>
   <div class="rule"></div>
   <div class="play bare">
+    <p class="lede">A set of lightweight, account-agnostic AI Native Engineering (AINE) practices, called Plays, that individuals and teams can adopt to improve their AINE processes or overcome common problems. They come from interviews with Nearform accounts that have AINE embedded in day-to-day delivery, varying in size, type of transformation and how long they had been running. It is not a complete list.</p>
+    <div class="stats">
+      <div class="stat"><span class="bar"></span><b>6</b><span>Plays</span></div>
+      <div class="stat"><span class="bar"></span><b>15</b><span>Nearform accounts interviewed</span></div>
+      <div class="stat"><span class="bar"></span><b>2026</b><span>Interviews in August and September</span></div>
+      <div class="stat"><span class="bar"></span><b>Opt-in</b><span>Nothing here is prescriptive</span></div>
+    </div>
     <div class="intro3 one">
-      <div class="it">
-        <p>A set of lightweight, account-agnostic AI Native Engineering (AINE) practices, called Plays, that
-          individuals and teams can adopt to improve their AINE processes or overcome common problems. They were
-          identified through interviews with 15 Nearform accounts in August and September 2026, all with AINE
-          embedded in day-to-day delivery and varying in size, type of transformation and how long they had been
-          running. It is not a complete list, and nothing here is prescriptive: use what fits your account, your
-          role and your work.</p></div>
+      
       <div class="it row"><span class="ie">&#129517;</span><p><b>How to use it.</b> Go straight to <a href="#plays">the Plays</a>, or use <a href="#hurts">Frequent challenges</a> to find
           the Plays that match what you're experiencing. Each Play gives an overview and the challenge it
           addresses, then its benefits, costs and points for consideration where relevant.</p></div>
